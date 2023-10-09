@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import * as env from './process.env.js'
+import * as env from './process.env.json'
 
 const firebaseConfig = {
     apiKey: env.API_KEY,
