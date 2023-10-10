@@ -2,6 +2,7 @@
 
 process.env.json
 credentials.json
+google-services.json
 
 # dependencies
 node_modules/

@@ -8,9 +8,7 @@ import {
 } from '@react-native-google-signin/google-signin';
 import Index from "./src";
 
-GoogleSignin.configure({
-  androidClientId:"577127812024-vqlnmubhuj9r5j0t7v7qsqvtak6l0t5h.apps.googleusercontent.com"
-});
+GoogleSignin.configure()
 
 
 export default function App() {
@@ -50,10 +48,10 @@ export default function App() {
       <Text style={{fontSize:28}}>Hi!</Text>
       <Text style={{fontSize:28}}>Welcome to Librihaven</Text>
       <GoogleSigninButton
-  size={GoogleSigninButton.Size.Standard}
-  color={GoogleSigninButton.Color.Dark}
+        size={GoogleSigninButton.Size.Standard}
+        color={GoogleSigninButton.Color.Dark}
         onPress={signIn}
-  disabled={false}
+        disabled={false}
 />
       <Text style={{fontSize:18}}>Please login with Google to continue</Text>
     </View>
