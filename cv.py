@@ -3,6 +3,7 @@
 # TODO: Shamb: OpenCV code to count the number of people
 
 # pip3 install pyrebase4
+
 import pyrebase
 import json
 import random
@@ -28,14 +29,20 @@ fb_config = {
 firebase = pyrebase.initialize_app(fb_config)
 db = firebase.database()
 
+
+# Import this function wherever needed
+def update_count(path: str, number: int):
+    db.child(path).set(number)
+
+
 while True:
     # For now push random numbers
     # In future replace this with OpenCV code
     rand_live = random.randint(0, 100)
     rand_peak = random.randint(0, 100)
 
-    db.child(LIBRARY).child("live").set(rand_live)
-    db.child(LIBRARY).child("peak").set(rand_peak)
+    update_count(f"{LIBRARY}/live", rand_live)
+    update_count(f"{LIBRARY}/peak", rand_peak)
 
     print(LIBRARY, rand_live, rand_peak)
     time.sleep(5)

@@ -6,6 +6,7 @@ import app from '../firebaseConfig';
 import {getDatabase,get,ref as dbRef, onValue, off} from 'firebase/database'
 import icon from "../assets/icon.png"
 
+
 const db = getDatabase(app)
 
 function Row({ children }) {
@@ -30,7 +31,7 @@ export default function Index() {
   const [live, setLive] = useState(0)
   const [peak, setPeak] = useState(0)
   const [unsub, setUnsub] = useState(() => () => {})
-  
+
   
   useEffect(() => {
     unsub()
@@ -69,6 +70,7 @@ export default function Index() {
         dropDownContainerStyle={{width:"77.5%",marginLeft:"10%", marginTop:10, backgroundColor: "#b9def3" }}
         labelStyle={{ fontSize: 18, textAlign: "center"}}
       />
+
       {
         value && <View style={{maxWidth:"100%"}}>
           <Col>
