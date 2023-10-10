@@ -6,39 +6,39 @@ export default {
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#e4cab0"
+        "image": "./assets/splash.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ddd"
     },
     "assetBundlePatterns": [
-      "**/*"
+        "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+        "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.shamblet.librihaven",
-      "versionCode": 1,
-      "googleServicesFile": process.env.GOOGLE_SERVICES_JSON
+        "adaptiveIcon": {
+            "foregroundImage": "./assets/icon.png",
+            "backgroundColor": "#ffffff"
+        },
+        "package": "com.shamblet.librihaven",
+        "versionCode": 1,
+        "googleServicesFile": process.env.GOOGLE_SERVICES_JSON
     },
     "web": {
-      "favicon": "./assets/icon.png"
+        "favicon": "./assets/icon.png"
     },
     "extra": {
-      "eas": {
-        "projectId": "6853bfca-14e8-4b8a-b54f-5f29a154e79c"
-      }
+        "eas": {
+            "projectId": "6853bfca-14e8-4b8a-b54f-5f29a154e79c"
+        }
     },
     "owner": "ankushkun",
     "runtimeVersion": {
-      "policy": "appVersion"
+        "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/6853bfca-14e8-4b8a-b54f-5f29a154e79c"
+        "url": "https://u.expo.dev/6853bfca-14e8-4b8a-b54f-5f29a154e79c"
     },
-    "plugins":["@react-native-google-signin/google-signin"]
-  }
+    "plugins": ["@react-native-google-signin/google-signin"]
+}

@@ -3,6 +3,7 @@
 process.env.json
 credentials.json
 google-services.json
+*.apk
 
 # dependencies
 node_modules/
