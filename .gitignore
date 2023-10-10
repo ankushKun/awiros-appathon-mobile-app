@@ -1,9 +1,10 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-process.env.json
+# process.env.json
 credentials.json
 google-services.json
 *.apk
+process.env.json
 
 # dependencies
 node_modules/

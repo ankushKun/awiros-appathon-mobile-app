@@ -19,7 +19,7 @@ export default {
     "android": {
         "adaptiveIcon": {
             "foregroundImage": "./assets/icon.png",
-            "backgroundColor": "#ffffff"
+            "backgroundColor": "transparent"
         },
         "package": "com.shamblet.librihaven",
         "versionCode": 1,

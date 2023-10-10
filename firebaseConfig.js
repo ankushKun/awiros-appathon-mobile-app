@@ -11,7 +11,7 @@ const firebaseConfig = {
     appId: env.APP_ID,
     measurementId: env.MEASURMENT_ID
 }
-    
+
 const app = initializeApp(firebaseConfig)
 
 export default app
